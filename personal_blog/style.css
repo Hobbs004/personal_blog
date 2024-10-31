@@ -1,0 +1,233 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
+}
+
+/* Header Styles */
+h1 {
+    font-size: 2.5em;
+    color: #4a4a8d;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Search Form */
+form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    transition: all 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #4a4a8d;
+    outline: none;
+    box-shadow: 0 0 8px rgba(74, 74, 141, 0.2);
+}
+
+button {
+    padding: 10px 16px;
+    background-color: #4a4a8d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 10px;
+}
+
+button:hover {
+    background-color: #363675;
+}
+
+/* Link Button */
+a {
+    color: #4a4a8d;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Post List Styles */
+.posts {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.post {
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.post h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.post p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Create New Post Button */
+a[href="create.php"] {
+    display: inline-block;
+    margin: 10px 0 20px 0;
+    background-color: #4a4a8d;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 4px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+a[href="create.php"]:hover {
+    background-color: #363675;
+}
+
+/* Mobile Friendly Styles */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    input[type="text"], button {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .posts {
+        max-width: 100%;
+    }
+}
+/* General Form Container */
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+h1 {
+    text-align: center;
+    color: #4a4a8d;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Form Inputs */
+input[type="text"], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus, textarea:focus {
+    border-color: #4a4a8d;
+    outline: none;
+    box-shadow: 0 0 8px rgba(74, 74, 141, 0.2);
+}
+
+/* Textarea */
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+/* Submit Button */
+button[type="submit"] {
+    padding: 12px;
+    background-color: #4a4a8d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #363675;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #4a4a8d;
+}
+
+.posts {
+    max-width: 700px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.post {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.post h2 {
+    color: #333;
+}
+
+.post p {
+    line-height: 1.6;
+}
+
+.post small {
+    color: #666;
+}
